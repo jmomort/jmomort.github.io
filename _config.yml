@@ -12,3 +12,15 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+collections:
+      optibeard:
+              output: true
+              permalink: /optibeard/:title
+      data-integration:
+               output: true
+               permalink: /data-integration/:title
+      jmo:
+               output: true
+               permalink: /:title
+               author: "Jonathan Mortensen"
