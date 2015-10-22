@@ -1,8 +1,12 @@
 ---
 layout: page
 title: "Optibeard Project"
+tags: "summary"
 ---
-<h1>Optibeard Project</h1>
-{% for c in site.optibeard %}
-<h2>{{ c.title }}</h2>
+{% assign sorted_posts = site.optibeard | sort: 'date' | reversed %}
+{% for c in sorted_posts %}
+{% unless c.tags contains "summary" %}
+<a class="post-link" href="{{ c.url | prepend: site.baseurl }}">{{ c.title }}</a>
+<p>{{c.excerpt}}</p>
+{% endunless %}
 {% endfor %}

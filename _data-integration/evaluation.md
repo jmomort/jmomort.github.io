@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ""
-date: "2015-10-31"
+title: "Integrating Data Integration"
+date: "2015-11-05"
 ---
 

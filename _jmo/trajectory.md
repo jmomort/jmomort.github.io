@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ""
-date: "2015-10-31"
+title: "Interactive financial planning"
+date: "2015-11-17"
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ""
-date: "2015-10-31"
+title: "Bake-Off Results"
+date: "2015-12-15"
 ---
 

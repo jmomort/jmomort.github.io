@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ""
-date: "2015-10-31"
+title: "Make the most of no-shave-november"
+date: "2015-11-23"
 ---
 

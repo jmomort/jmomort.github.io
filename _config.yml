@@ -1,14 +1,24 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Dadeon
+subtitle: "Musings on datums"
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+
+author1: "Jonathan Mortensen"
+email1: jonathan@mortensens.us
+twitter_username1: jmomort
+github_username1:  jmomort
+site1: jonathanmortensen.com 
+
+author2: "Francisco Gimenez"
+email2: francisco@catenus.com
+twitter_username2: fgimenez
+github_username2:  fgimenez
+site2: catenus.com
 
 # Build settings
 markdown: kramdown
@@ -16,11 +26,11 @@ markdown: kramdown
 collections:
       optibeard:
               output: true
-              permalink: /optibeard/:title
+              #permalink: /optibeard/:title
       data-integration:
-               output: true
-               permalink: /data-integration/:title
+              output: true
+              #permalink: /data-integration/:title
       jmo:
-               output: true
-               permalink: /:title
-               author: "Jonathan Mortensen"
+              output: true
+              permalink: /:title
+              author: "Jonathan Mortensen"

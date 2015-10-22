@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ""
-date: "2015-10-31"
+title: "Finding the longest shave path in-depth"
+date: "2015-11-18"
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ""
-date: "2015-10-31"
+title: "Analysis of shave graph competition"
+date: "2015-12-10"
 ---
 

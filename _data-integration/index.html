@@ -1,5 +1,12 @@
 ---
 layout: page
-title: ""
+title: "Data Integration"
+tags: "summary"
 ---
-
+{% assign sorted_posts = site.data-integration | sort: 'date' | reversed %}
+{% for c in sorted_posts %}
+{% unless c.tags contains "summary" %}
+<a class="post-link" href="{{ c.url | prepend: site.baseurl }}">{{ c.title }}</a>
+<p>{{c.excerpt}}</p>
+{% endunless %}
+{% endfor %}

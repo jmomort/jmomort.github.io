@@ -1,6 +1,7 @@
 ---
 layout: page
-title: ""
-date: "2015-10-31"
+title: "Maximizing your facial hair style"
+date: "2015-11-15"
 ---
 
+This is a test

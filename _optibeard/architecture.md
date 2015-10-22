@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ""
-date: "2015-10-31"
+title: "The architecture behind the shaving graph"
+date: "2015-12-01"
 ---
 
