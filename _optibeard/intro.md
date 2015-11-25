@@ -4,7 +4,7 @@ title: "Maximizing your stache-path"
 date: "2015-11-15"
 ---
 
-* gif of a stache-path
+* image of a stache-path
 
 stache-path
     : the facial hair styles you use when shaving from full beard to no beard
@@ -35,4 +35,9 @@ maximal stache-path
 # finding the longest stache-path(s)
 * pictures of longest paths
 
-# teaser for future challenge
+# announcement of stache-path competition
+* picture of twitter bot with graph
+
+# brief instructions with example
+
+# link to stache-path.com for full info
