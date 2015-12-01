@@ -85,4 +85,4 @@ We're looking forward to seeing your amazing styles!
 
 # The nitty gritty details
 We glossed over the implementation of graph construction and longest path generation.
-Interested parties should checkout our [ipython notebook](details.ipynb) for the full details.
+Interested parties should checkout our [ipython notebook](https://github.com/jmomort/jmomort.github.io/blob/master/optibeard/details.ipynb) for the full details.
