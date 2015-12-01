@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Maximizing your stache-path</title>
+  <title>Maximizing your stachepath</title>
   <meta name="description" content="Musings on datums">
 
   <link rel="stylesheet" href="/css/main.css">
@@ -57,63 +57,91 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Maximizing your stache-path</h1>
+    <h1 class="post-title">Maximizing your stachepath</h1>
   </header>
 
   <article class="post-content">
-    <ul>
-  <li>image of a stache-path</li>
-</ul>
+    <p>Every man wonders: “How many facial hair styles can I get from full beard?” 
+Today, we have that answer. In short, we’ve constructed a full graph of all stachepaths. 
+That is, a list of ways you  can shave from beard style X to beard style Y.</p>
 
-<p>stache-path
+<p>First, some definitions:</p>
+
+<p>stachepath
     : the facial hair styles you use when shaving from full beard to no beard</p>
 
-<p>maximal stache-path
-    : a stache-path which includes the highest number of facial hair styles</p>
+<p>stachegraph
+    : all possible stachepaths when shaving from full beard to no beard</p>
 
-<h1 id="motivation">motivation</h1>
-<ol>
-  <li>no shave november</li>
-  <li>the question</li>
-</ol>
+<p>maximal stachepath
+    : a stachepath which has the highest number of facial hair styles</p>
 
-<h1 id="the-stache-path">the stache-path</h1>
-<ul>
-  <li>picture of naive example with 3 styles</li>
-</ul>
+<p>Let’s work through each.</p>
 
-<h1 id="library-of-facial-hair-styles">library of facial hair styles</h1>
-<ul>
-  <li>picture of styles in grid</li>
-</ul>
+<h2 id="the-stachepath">The stachepath</h2>
+<p>No shave session can be complete without considering how great you’d look in a copstache.
+In that thought is the embodyment of a stachepath. 
+Starting with one facial hair style, one might ask, “what others can I have before I’m clean shaven?”</p>
 
-<h1 id="creating-the-stache-graph">creating the stache-graph</h1>
+<p>For example, you might start with a “Short Boxed Beard”:</p>
 
-<h2 id="determining-shave-ability">determining shave-ability</h2>
-<ul>
-  <li>picture of shave-ability UI</li>
-</ul>
+<p><img src="shortboxedbeard.jpg" alt="short boxed beard" /></p>
 
-<h2 id="reaching-consensus">reaching consensus</h2>
+<p>Then you shave to a “Handlebar and Goatee”:</p>
 
-<h2 id="graph-generation">graph generation</h2>
-<ul>
-  <li>picture of graph</li>
-</ul>
+<p><img src="handlebarandgoatee.jpg" alt="handlebar and goatee" /></p>
 
-<h1 id="finding-the-longest-stache-paths">finding the longest stache-path(s)</h1>
-<ul>
-  <li>pictures of longest paths</li>
-</ul>
+<p>You might throw in a “Pencil” for good measure:</p>
 
-<h1 id="announcement-of-stache-path-competition">announcement of stache-path competition</h1>
-<ul>
-  <li>picture of twitter bot with graph</li>
-</ul>
+<p><img src="pencil.jpg" alt="pencil" /></p>
 
-<h1 id="brief-instructions-with-example">brief instructions with example</h1>
+<p>Then, you finally shave off the remaining hair, leaving yourself in the “Federation Standard” style:
+<img src="federationstandard.jpg" alt="federation standard" /></p>
 
-<h1 id="link-to-stache-pathcom-for-full-info">link to stache-path.com for full info</h1>
+<p>Here, we just constructed a stachepath of “Short Boxed Beard”-&gt;”Handlebar and Goatee”-&gt;”Pencil”-&gt;”Federation Standard”. 
+Let’s see what we can do by extending the stachepath idea.</p>
+
+<h1 id="a-library-of-facial-hair-styles">A library of facial hair styles</h1>
+<p>To begin considering stachepaths more fully, it is important to know what amazing facial hair styles exist.
+Of course, the number of facial hair styles one can have is limitless. 
+But, for our purposes, we needed a library of facial hair styles.
+Through the help of <a href="http://www.fiverr.com">fiverr</a>, we created a set of common facial hair styles.
+<img src="combined_wide.jpg" alt="stachelib" /></p>
+
+<h2 id="extending-the-stachepath----the-stachegraph">Extending the stachepath – the stachegraph</h2>
+<p>Once we realized the awesomeness of a single stachepath, we knew we wanted to know all possible stachepaths.</p>
+
+<h1 id="enter-shave-ability">Enter “shave-ability”</h1>
+<p>To determine all possible paths, we needed to know the shave-ability of every facial hair style pair. 
+Stated another way, we needed to know whether, given two facial hair styles, one can shave from one to the other.
+We wrote a tiny web application that would allow us to do it quickly. 
+In the screenshot below, the app presents two styles and we selected whether the left can shave to the right or vice versa.
+<img src="shave-ability.png" alt="shave-ability tool" /></p>
+
+<h1 id="a-fully-armed-and-operational-stachegraph">A fully armed and operational stachegraph</h1>
+<p>With the shave-abilty information in hand, we treated each style as a node, and each shave-ability connection as an edge.
+We mashed that all together to get all possible shave paths.
+<img src="beard_graph.png" alt="stachegraph" /></p>
+
+<h2 id="the-longest-stachepath">The longest stachepath</h2>
+<p>The coolest thing about a stachegraph is you can apply fun compter science algorithms to it.
+We used a <a href="https://en.wikipedia.org/wiki/Longest_path_problem">longest path</a> algorithm to find the maximal stachepath. 
+This path shows the most number of facial styles to which you can shave when starting from a full beard.</p>
+
+<p><img src="optimal_beard_path_0.png" alt="maximal stachepath" /></p>
+
+<p>This is great! Now you know, through first principles, the most number of ways to annoy your significant other while still being super cool.</p>
+
+<h2 id="announcement-stachepath-competition">Announcement: Stachepath competition!</h2>
+
+<p>We’ve created a <a href="http://twitter.com/stachepath">twitterbot</a> that will help you build and share your own stachepath.
+Tweet @stachepath with #yourfacialhairstyle and the bot will reply with your picture on the stachegraph!
+Visit <a href="http://www.stachepath.com">stachepath.com</a> for the full style list and additional details.
+We’re looking forward to seeing your amazing styles!</p>
+
+<h1 id="the-nitty-gritty-details">The nitty gritty details</h1>
+<p>We glossed over the implementation of graph construction and longest path generation.
+Interested parties should checkout our <a href="details.ipynb">ipython notebook</a> for the full details.</p>
 
   </article>
 
@@ -168,14 +196,7 @@
                 </ul>
             </div>
 
-
-
-
             <div class="footer-col  footer-col-3">
-                <p class="text">Musings on datums</p>
-            </div>
-
-            <div class="footer-col  footer-col-1">
                 <ul class="contact-list">
                     <li>Francisco Gimenez</li>
                     <li><a href="mailto:francisco@catenus.com">francisco@catenus.com</a></li>
@@ -183,7 +204,7 @@
                 </ul>
             </div>
 
-            <div class="footer-col  footer-col-2">
+            <div class="footer-col  footer-col-4">
                 <ul class="social-media-list">
                     
                     <li>
