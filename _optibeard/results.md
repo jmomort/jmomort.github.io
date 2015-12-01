@@ -2,6 +2,7 @@
 layout: page
 title: "Analysis of shave graph competition"
 date: "2015-12-10"
+published: false
 ---
 
 # recap of the stache-path

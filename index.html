@@ -4,11 +4,12 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Musings</h1>
 
   <ul class="post-list">
       {% assign sorted_posts = site.documents | sort: 'date' %}
       {% for post in sorted_posts reversed %}
+      {% if post.published %}
       {% unless post.tags contains "summary" %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -18,6 +19,7 @@ layout: default
         </h2>
       </li>
      {% endunless %}
+     {% endif %}
     {% endfor %}
   </ul>
 

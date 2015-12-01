@@ -7,6 +7,7 @@
                 <ul class="contact-list">
                     <li>{{ site.author1 }}</li>
                     <li><a href="mailto:{{ site.email1 }}">{{ site.email1 }}</a></li>
+                    <li><a href="http://{{site.site1}}">{{site.site1}}</a></li>
                 </ul>
             </div>
 
@@ -43,21 +44,15 @@
                 </ul>
             </div>
 
-
-
-
             <div class="footer-col  footer-col-3">
-                <p class="text">{{ site.description }}</p>
-            </div>
-
-            <div class="footer-col  footer-col-1">
                 <ul class="contact-list">
                     <li>{{ site.author2 }}</li>
                     <li><a href="mailto:{{ site.email2 }}">{{ site.email2 }}</a></li>
+                    <li><a href="http://{{site.site2}}">{{site.site2}}</a></li>
                 </ul>
             </div>
 
-            <div class="footer-col  footer-col-2">
+            <div class="footer-col  footer-col-4">
                 <ul class="social-media-list">
                     {% if site.github_username2 %}
                     <li>
