@@ -31,3 +31,5 @@ collections:
               output: true
               #permalink: /:title
               author: "Jonathan Mortensen"
+
+exclude: [README.md]
