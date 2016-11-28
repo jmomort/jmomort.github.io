@@ -25,7 +25,7 @@ collections:
               output: true
               #permalink: /optibeard/:title
       data-integration:
-              output: true
+              output: false
               #permalink: /data-integration/:title
       jmo:
               output: true
